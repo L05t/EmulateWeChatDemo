@@ -15,6 +15,8 @@
 		05A8FBE91F2201E800AC1D61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A8FBE71F2201E800AC1D61 /* LaunchScreen.storyboard */; };
 		05A8FBF41F2201E800AC1D61 /* EmulateWeChatDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FBF31F2201E800AC1D61 /* EmulateWeChatDemoTests.m */; };
 		05A8FBFF1F2201E800AC1D61 /* EmulateWeChatDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FBFE1F2201E800AC1D61 /* EmulateWeChatDemoUITests.m */; };
+		05A8FC0F1F22027F00AC1D61 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FC0D1F22027F00AC1D61 /* CommentViewController.m */; };
+		05A8FC101F22027F00AC1D61 /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A8FC0E1F22027F00AC1D61 /* CommentViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		05A8FBFA1F2201E800AC1D61 /* EmulateWeChatDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmulateWeChatDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A8FBFE1F2201E800AC1D61 /* EmulateWeChatDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmulateWeChatDemoUITests.m; sourceTree = "<group>"; };
 		05A8FC001F2201E800AC1D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05A8FC0C1F22027F00AC1D61 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		05A8FC0D1F22027F00AC1D61 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
+		05A8FC0E1F22027F00AC1D61 /* CommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
+		05A8FC121F22076000AC1D61 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,14 @@
 		05A8FBD81F2201E800AC1D61 /* EmulateWeChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				05A8FC111F2206CD00AC1D61 /* Source */,
 				05A8FBDC1F2201E800AC1D61 /* AppDelegate.h */,
 				05A8FBDD1F2201E800AC1D61 /* AppDelegate.m */,
 				05A8FBDF1F2201E800AC1D61 /* ViewController.h */,
 				05A8FBE01F2201E800AC1D61 /* ViewController.m */,
+				05A8FC0C1F22027F00AC1D61 /* CommentViewController.h */,
+				05A8FC0D1F22027F00AC1D61 /* CommentViewController.m */,
+				05A8FC0E1F22027F00AC1D61 /* CommentViewController.xib */,
 				05A8FBE21F2201E800AC1D61 /* Main.storyboard */,
 				05A8FBE51F2201E800AC1D61 /* Assets.xcassets */,
 				05A8FBE71F2201E800AC1D61 /* LaunchScreen.storyboard */,
@@ -138,6 +148,14 @@
 				05A8FC001F2201E800AC1D61 /* Info.plist */,
 			);
 			path = EmulateWeChatDemoUITests;
+			sourceTree = "<group>";
+		};
+		05A8FC111F2206CD00AC1D61 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				05A8FC121F22076000AC1D61 /* Data.json */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A8FC101F22027F00AC1D61 /* CommentViewController.xib in Resources */,
 				05A8FBE91F2201E800AC1D61 /* LaunchScreen.storyboard in Resources */,
 				05A8FBE61F2201E800AC1D61 /* Assets.xcassets in Resources */,
 				05A8FBE41F2201E800AC1D61 /* Main.storyboard in Resources */,
@@ -276,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A8FC0F1F22027F00AC1D61 /* CommentViewController.m in Sources */,
 				05A8FBE11F2201E800AC1D61 /* ViewController.m in Sources */,
 				05A8FBDE1F2201E800AC1D61 /* AppDelegate.m in Sources */,
 				05A8FBDB1F2201E800AC1D61 /* main.m in Sources */,
@@ -429,6 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XB9G77HU3C;
 				INFOPLIST_FILE = EmulateWeChatDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DripCarCompany..EmulateWeChatDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +462,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XB9G77HU3C;
 				INFOPLIST_FILE = EmulateWeChatDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DripCarCompany..EmulateWeChatDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
