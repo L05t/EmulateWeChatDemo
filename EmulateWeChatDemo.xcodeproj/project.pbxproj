@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		05A8FBDB1F2201E800AC1D61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FBDA1F2201E800AC1D61 /* main.m */; };
-		05A8FBDE1F2201E800AC1D61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FBDD1F2201E800AC1D61 /* AppDelegate.m */; };
 		05A8FBE11F2201E800AC1D61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FBE01F2201E800AC1D61 /* ViewController.m */; };
 		05A8FBE41F2201E800AC1D61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A8FBE21F2201E800AC1D61 /* Main.storyboard */; };
 		05A8FBE61F2201E800AC1D61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A8FBE51F2201E800AC1D61 /* Assets.xcassets */; };
@@ -17,6 +16,7 @@
 		05A8FBFF1F2201E800AC1D61 /* EmulateWeChatDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FBFE1F2201E800AC1D61 /* EmulateWeChatDemoUITests.m */; };
 		05A8FC0F1F22027F00AC1D61 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FC0D1F22027F00AC1D61 /* CommentViewController.m */; };
 		05A8FC101F22027F00AC1D61 /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A8FC0E1F22027F00AC1D61 /* CommentViewController.xib */; };
+		05A8FC161F221D3300AC1D61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FC151F221D3300AC1D61 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 /* Begin PBXFileReference section */
 		05A8FBD61F2201E800AC1D61 /* EmulateWeChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmulateWeChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A8FBDA1F2201E800AC1D61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		05A8FBDC1F2201E800AC1D61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		05A8FBDD1F2201E800AC1D61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		05A8FBDF1F2201E800AC1D61 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		05A8FBE01F2201E800AC1D61 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		05A8FBE31F2201E800AC1D61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +55,8 @@
 		05A8FC0D1F22027F00AC1D61 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
 		05A8FC0E1F22027F00AC1D61 /* CommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
 		05A8FC121F22076000AC1D61 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		05A8FC141F221D3300AC1D61 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		05A8FC151F221D3300AC1D61 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +107,11 @@
 		05A8FBD81F2201E800AC1D61 /* EmulateWeChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				05A8FC131F221D3300AC1D61 /* AppDelegate */,
+				05A8FC171F221D3800AC1D61 /* BaseNavigationController */,
+				05A8FC181F221D3C00AC1D61 /* BaseTableViewCell */,
+				05A8FC191F221D4100AC1D61 /* BaseUIViewController */,
 				05A8FC111F2206CD00AC1D61 /* Source */,
-				05A8FBDC1F2201E800AC1D61 /* AppDelegate.h */,
-				05A8FBDD1F2201E800AC1D61 /* AppDelegate.m */,
 				05A8FBDF1F2201E800AC1D61 /* ViewController.h */,
 				05A8FBE01F2201E800AC1D61 /* ViewController.m */,
 				05A8FC0C1F22027F00AC1D61 /* CommentViewController.h */,
@@ -156,6 +158,36 @@
 				05A8FC121F22076000AC1D61 /* Data.json */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		05A8FC131F221D3300AC1D61 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				05A8FC141F221D3300AC1D61 /* AppDelegate.h */,
+				05A8FC151F221D3300AC1D61 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		05A8FC171F221D3800AC1D61 /* BaseNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseNavigationController;
+			sourceTree = "<group>";
+		};
+		05A8FC181F221D3C00AC1D61 /* BaseTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseTableViewCell;
+			sourceTree = "<group>";
+		};
+		05A8FC191F221D4100AC1D61 /* BaseUIViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseUIViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,9 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A8FC161F221D3300AC1D61 /* AppDelegate.m in Sources */,
 				05A8FC0F1F22027F00AC1D61 /* CommentViewController.m in Sources */,
 				05A8FBE11F2201E800AC1D61 /* ViewController.m in Sources */,
-				05A8FBDE1F2201E800AC1D61 /* AppDelegate.m in Sources */,
 				05A8FBDB1F2201E800AC1D61 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
