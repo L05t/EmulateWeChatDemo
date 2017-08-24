@@ -1,22 +1,22 @@
 //
-//  CommentViewController.m
+//  BaseViewController.m
 //  EmulateWeChatDemo
 //
-//  Created by shuidi_iMac on 2017/7/21.
+//  Created by shuidi_iMac on 2017/8/23.
 //  Copyright © 2017年 shuidi_iMac. All rights reserved.
 //
 
-#import "CommentViewController.h"
+#import "BaseViewController.h"
 
-@interface CommentViewController ()
+@interface BaseViewController ()
 
 @end
 
-@implementation CommentViewController
+@implementation BaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

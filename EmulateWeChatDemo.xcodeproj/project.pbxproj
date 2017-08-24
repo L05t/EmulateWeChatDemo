@@ -7,16 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05134BA21F4ECF8E0016A8E5 /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05134BA01F4ECF8E0016A8E5 /* CommentTableViewCell.m */; };
+		05134BA31F4ECF8E0016A8E5 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05134BA11F4ECF8E0016A8E5 /* CommentTableViewCell.xib */; };
+		05134BAC1F4ED2A60016A8E5 /* CommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05134BAB1F4ED2A60016A8E5 /* CommentModel.m */; };
+		056F4E411F4D640200A79C4E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056F4E3F1F4D640200A79C4E /* RootViewController.m */; };
+		056F4E421F4D640200A79C4E /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056F4E401F4D640200A79C4E /* RootViewController.xib */; };
+		056F4E4E1F4D6A0400A79C4E /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056F4E4D1F4D6A0400A79C4E /* BaseNavigationController.m */; };
+		056F4E521F4D6B7700A79C4E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056F4E511F4D6B7700A79C4E /* BaseViewController.m */; };
+		056F4E561F4D6B8E00A79C4E /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056F4E541F4D6B8E00A79C4E /* DiscoverViewController.m */; };
+		056F4E571F4D6B8E00A79C4E /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056F4E551F4D6B8E00A79C4E /* DiscoverViewController.xib */; };
+		0585C59F1F4E84E900AACFB0 /* DiscoverVC.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0585C59E1F4E84E900AACFB0 /* DiscoverVC.xcassets */; };
+		0585C5E81F4E8D6C00AACFB0 /* TimeLineTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0585C5E71F4E8D6C00AACFB0 /* TimeLineTableHeaderView.m */; };
+		0585C5EA1F4E8D7500AACFB0 /* TimeLineTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0585C5E91F4E8D7500AACFB0 /* TimeLineTableHeaderView.xib */; };
+		0585C5F61F4EBF8200AACFB0 /* TimeLineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0585C5F41F4EBF8200AACFB0 /* TimeLineTableViewCell.m */; };
+		0585C5F71F4EBF8200AACFB0 /* TimeLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0585C5F51F4EBF8200AACFB0 /* TimeLineTableViewCell.xib */; };
+		059DBDEB1F4D711C00357D0A /* TimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 059DBDE91F4D711C00357D0A /* TimeLineViewController.m */; };
+		059DBDEC1F4D711C00357D0A /* TimeLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 059DBDEA1F4D711C00357D0A /* TimeLineViewController.xib */; };
+		059DBDFD1F4D765E00357D0A /* DiscoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 059DBDFB1F4D765E00357D0A /* DiscoverTableViewCell.m */; };
+		059DBDFE1F4D765E00357D0A /* DiscoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 059DBDFC1F4D765E00357D0A /* DiscoverTableViewCell.xib */; };
+		059DBE011F4D81BB00357D0A /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 059DBE001F4D81BB00357D0A /* BaseModel.m */; };
+		059DBE051F4D820B00357D0A /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 059DBE041F4D820B00357D0A /* MessageModel.m */; };
+		059DBE0C1F4D8A0700357D0A /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 059DBE0B1F4D8A0700357D0A /* data.json */; };
 		05A8FBDB1F2201E800AC1D61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FBDA1F2201E800AC1D61 /* main.m */; };
-		05A8FBE11F2201E800AC1D61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FBE01F2201E800AC1D61 /* ViewController.m */; };
 		05A8FBE41F2201E800AC1D61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A8FBE21F2201E800AC1D61 /* Main.storyboard */; };
 		05A8FBE61F2201E800AC1D61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A8FBE51F2201E800AC1D61 /* Assets.xcassets */; };
 		05A8FBE91F2201E800AC1D61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A8FBE71F2201E800AC1D61 /* LaunchScreen.storyboard */; };
 		05A8FBF41F2201E800AC1D61 /* EmulateWeChatDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FBF31F2201E800AC1D61 /* EmulateWeChatDemoTests.m */; };
 		05A8FBFF1F2201E800AC1D61 /* EmulateWeChatDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FBFE1F2201E800AC1D61 /* EmulateWeChatDemoUITests.m */; };
-		05A8FC0F1F22027F00AC1D61 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FC0D1F22027F00AC1D61 /* CommentViewController.m */; };
-		05A8FC101F22027F00AC1D61 /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A8FC0E1F22027F00AC1D61 /* CommentViewController.xib */; };
 		05A8FC161F221D3300AC1D61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8FC151F221D3300AC1D61 /* AppDelegate.m */; };
+		B57BDE12C3AE1EFBB4B44C6F /* libPods-EmulateWeChatDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 485300E72CF8DE9FF4CE6750 /* libPods-EmulateWeChatDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +56,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05134B9F1F4ECF8E0016A8E5 /* CommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
+		05134BA01F4ECF8E0016A8E5 /* CommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
+		05134BA11F4ECF8E0016A8E5 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		05134BAA1F4ED2A60016A8E5 /* CommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentModel.h; sourceTree = "<group>"; };
+		05134BAB1F4ED2A60016A8E5 /* CommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentModel.m; sourceTree = "<group>"; };
+		056F4E3E1F4D640200A79C4E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		056F4E3F1F4D640200A79C4E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		056F4E401F4D640200A79C4E /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		056F4E4C1F4D6A0400A79C4E /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		056F4E4D1F4D6A0400A79C4E /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		056F4E501F4D6B7700A79C4E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		056F4E511F4D6B7700A79C4E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		056F4E531F4D6B8E00A79C4E /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		056F4E541F4D6B8E00A79C4E /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		056F4E551F4D6B8E00A79C4E /* DiscoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverViewController.xib; sourceTree = "<group>"; };
+		0585C59E1F4E84E900AACFB0 /* DiscoverVC.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DiscoverVC.xcassets; sourceTree = "<group>"; };
+		0585C5E61F4E8D6C00AACFB0 /* TimeLineTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineTableHeaderView.h; sourceTree = "<group>"; };
+		0585C5E71F4E8D6C00AACFB0 /* TimeLineTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineTableHeaderView.m; sourceTree = "<group>"; };
+		0585C5E91F4E8D7500AACFB0 /* TimeLineTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeLineTableHeaderView.xib; sourceTree = "<group>"; };
+		0585C5F31F4EBF8200AACFB0 /* TimeLineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineTableViewCell.h; sourceTree = "<group>"; };
+		0585C5F41F4EBF8200AACFB0 /* TimeLineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineTableViewCell.m; sourceTree = "<group>"; };
+		0585C5F51F4EBF8200AACFB0 /* TimeLineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeLineTableViewCell.xib; sourceTree = "<group>"; };
+		059DBDE81F4D711C00357D0A /* TimeLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineViewController.h; sourceTree = "<group>"; };
+		059DBDE91F4D711C00357D0A /* TimeLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineViewController.m; sourceTree = "<group>"; };
+		059DBDEA1F4D711C00357D0A /* TimeLineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeLineViewController.xib; sourceTree = "<group>"; };
+		059DBDFA1F4D765E00357D0A /* DiscoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTableViewCell.h; sourceTree = "<group>"; };
+		059DBDFB1F4D765E00357D0A /* DiscoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTableViewCell.m; sourceTree = "<group>"; };
+		059DBDFC1F4D765E00357D0A /* DiscoverTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverTableViewCell.xib; sourceTree = "<group>"; };
+		059DBDFF1F4D81BB00357D0A /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		059DBE001F4D81BB00357D0A /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		059DBE031F4D820B00357D0A /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
+		059DBE041F4D820B00357D0A /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
+		059DBE0B1F4D8A0700357D0A /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		05A8FBD61F2201E800AC1D61 /* EmulateWeChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmulateWeChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A8FBDA1F2201E800AC1D61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		05A8FBDF1F2201E800AC1D61 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		05A8FBE01F2201E800AC1D61 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		05A8FBE31F2201E800AC1D61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05A8FBE51F2201E800AC1D61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05A8FBE81F2201E800AC1D61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,12 +101,11 @@
 		05A8FBFA1F2201E800AC1D61 /* EmulateWeChatDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmulateWeChatDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A8FBFE1F2201E800AC1D61 /* EmulateWeChatDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmulateWeChatDemoUITests.m; sourceTree = "<group>"; };
 		05A8FC001F2201E800AC1D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05A8FC0C1F22027F00AC1D61 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
-		05A8FC0D1F22027F00AC1D61 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
-		05A8FC0E1F22027F00AC1D61 /* CommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
-		05A8FC121F22076000AC1D61 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		05A8FC141F221D3300AC1D61 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05A8FC151F221D3300AC1D61 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		485300E72CF8DE9FF4CE6750 /* libPods-EmulateWeChatDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmulateWeChatDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56513C02BC34AE83C3D192AD /* Pods-EmulateWeChatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmulateWeChatDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmulateWeChatDemo/Pods-EmulateWeChatDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8A6C0D2CF61FCBF8A3A6F7F5 /* Pods-EmulateWeChatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmulateWeChatDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmulateWeChatDemo/Pods-EmulateWeChatDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57BDE12C3AE1EFBB4B44C6F /* libPods-EmulateWeChatDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +134,162 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05134B971F4ECEA20016A8E5 /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ThirdLib;
+			sourceTree = "<group>";
+		};
+		056F4E3D1F4D63D300A79C4E /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				056F4E3E1F4D640200A79C4E /* RootViewController.h */,
+				056F4E3F1F4D640200A79C4E /* RootViewController.m */,
+				056F4E401F4D640200A79C4E /* RootViewController.xib */,
+			);
+			name = TabBarController;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		056F4E4F1F4D6B3C00A79C4E /* DiscoverViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0585C5E51F4E8D5100AACFB0 /* View */,
+				0585C5E41F4E8D4A00AACFB0 /* Model */,
+				0585C5E31F4E8D3F00AACFB0 /* Controller */,
+				056F4E531F4D6B8E00A79C4E /* DiscoverViewController.h */,
+				056F4E541F4D6B8E00A79C4E /* DiscoverViewController.m */,
+				056F4E551F4D6B8E00A79C4E /* DiscoverViewController.xib */,
+				059DBDE71F4D70D700357D0A /* TimeLineViewController */,
+			);
+			name = DiscoverViewController;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0585C59D1F4E84CE00AACFB0 /* DiscoverVC */ = {
+			isa = PBXGroup;
+			children = (
+				0585C59E1F4E84E900AACFB0 /* DiscoverVC.xcassets */,
+			);
+			name = DiscoverVC;
+			sourceTree = "<group>";
+		};
+		0585C5E31F4E8D3F00AACFB0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0585C5E41F4E8D4A00AACFB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0585C5E51F4E8D5100AACFB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0585C5E61F4E8D6C00AACFB0 /* TimeLineTableHeaderView.h */,
+				0585C5E71F4E8D6C00AACFB0 /* TimeLineTableHeaderView.m */,
+				0585C5E91F4E8D7500AACFB0 /* TimeLineTableHeaderView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0585C5F01F4EBF4C00AACFB0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				059DBDE81F4D711C00357D0A /* TimeLineViewController.h */,
+				059DBDE91F4D711C00357D0A /* TimeLineViewController.m */,
+				059DBDEA1F4D711C00357D0A /* TimeLineViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0585C5F11F4EBF5600AACFB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0585C5F31F4EBF8200AACFB0 /* TimeLineTableViewCell.h */,
+				0585C5F41F4EBF8200AACFB0 /* TimeLineTableViewCell.m */,
+				0585C5F51F4EBF8200AACFB0 /* TimeLineTableViewCell.xib */,
+				05134B9F1F4ECF8E0016A8E5 /* CommentTableViewCell.h */,
+				05134BA01F4ECF8E0016A8E5 /* CommentTableViewCell.m */,
+				05134BA11F4ECF8E0016A8E5 /* CommentTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0585C5F21F4EBF5D00AACFB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		059DBDE71F4D70D700357D0A /* TimeLineViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0585C5F21F4EBF5D00AACFB0 /* Model */,
+				0585C5F11F4EBF5600AACFB0 /* View */,
+				0585C5F01F4EBF4C00AACFB0 /* Controller */,
+			);
+			name = TimeLineViewController;
+			sourceTree = "<group>";
+		};
+		059DBDED1F4D736700357D0A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				056F4E3D1F4D63D300A79C4E /* TabBarController */,
+				05A8FC171F221D3800AC1D61 /* BaseNavigationController */,
+				05A8FC191F221D4100AC1D61 /* BaseViewController */,
+				056F4E4F1F4D6B3C00A79C4E /* DiscoverViewController */,
+			);
+			name = Controller;
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		059DBDEE1F4D739900357D0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				059DBE021F4D820300357D0A /* MessageModel */,
+				059DBDFF1F4D81BB00357D0A /* BaseModel.h */,
+				059DBE001F4D81BB00357D0A /* BaseModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		059DBDEF1F4D739E00357D0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				059DBDF01F4D73B000357D0A /* TimeLineTableViewCell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		059DBDF01F4D73B000357D0A /* TimeLineTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				059DBDFA1F4D765E00357D0A /* DiscoverTableViewCell.h */,
+				059DBDFB1F4D765E00357D0A /* DiscoverTableViewCell.m */,
+				059DBDFC1F4D765E00357D0A /* DiscoverTableViewCell.xib */,
+			);
+			name = TimeLineTableViewCell;
+			sourceTree = "<group>";
+		};
+		059DBE021F4D820300357D0A /* MessageModel */ = {
+			isa = PBXGroup;
+			children = (
+				059DBE031F4D820B00357D0A /* MessageModel.h */,
+				059DBE041F4D820B00357D0A /* MessageModel.m */,
+				05134BAA1F4ED2A60016A8E5 /* CommentModel.h */,
+				05134BAB1F4ED2A60016A8E5 /* CommentModel.m */,
+			);
+			name = MessageModel;
+			sourceTree = "<group>";
+		};
 		05A8FBCD1F2201E800AC1D61 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +297,8 @@
 				05A8FBF21F2201E800AC1D61 /* EmulateWeChatDemoTests */,
 				05A8FBFD1F2201E800AC1D61 /* EmulateWeChatDemoUITests */,
 				05A8FBD71F2201E800AC1D61 /* Products */,
+				D47B78843EAD79EF142B0D5E /* Pods */,
+				9E7EBE8CE236A3CC802D2FFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,18 +315,14 @@
 		05A8FBD81F2201E800AC1D61 /* EmulateWeChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				05134B971F4ECEA20016A8E5 /* ThirdLib */,
 				05A8FC131F221D3300AC1D61 /* AppDelegate */,
-				05A8FC171F221D3800AC1D61 /* BaseNavigationController */,
-				05A8FC181F221D3C00AC1D61 /* BaseTableViewCell */,
-				05A8FC191F221D4100AC1D61 /* BaseUIViewController */,
-				05A8FC111F2206CD00AC1D61 /* Source */,
-				05A8FBDF1F2201E800AC1D61 /* ViewController.h */,
-				05A8FBE01F2201E800AC1D61 /* ViewController.m */,
-				05A8FC0C1F22027F00AC1D61 /* CommentViewController.h */,
-				05A8FC0D1F22027F00AC1D61 /* CommentViewController.m */,
-				05A8FC0E1F22027F00AC1D61 /* CommentViewController.xib */,
+				059DBDEE1F4D739900357D0A /* Model */,
+				059DBDEF1F4D739E00357D0A /* View */,
+				059DBDED1F4D736700357D0A /* Controller */,
 				05A8FBE21F2201E800AC1D61 /* Main.storyboard */,
 				05A8FBE51F2201E800AC1D61 /* Assets.xcassets */,
+				0585C59D1F4E84CE00AACFB0 /* DiscoverVC */,
 				05A8FBE71F2201E800AC1D61 /* LaunchScreen.storyboard */,
 				05A8FBEA1F2201E800AC1D61 /* Info.plist */,
 				05A8FBD91F2201E800AC1D61 /* Supporting Files */,
@@ -129,6 +333,7 @@
 		05A8FBD91F2201E800AC1D61 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				059DBE0B1F4D8A0700357D0A /* data.json */,
 				05A8FBDA1F2201E800AC1D61 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -152,14 +357,6 @@
 			path = EmulateWeChatDemoUITests;
 			sourceTree = "<group>";
 		};
-		05A8FC111F2206CD00AC1D61 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				05A8FC121F22076000AC1D61 /* Data.json */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
 		05A8FC131F221D3300AC1D61 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,22 +369,38 @@
 		05A8FC171F221D3800AC1D61 /* BaseNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				056F4E4C1F4D6A0400A79C4E /* BaseNavigationController.h */,
+				056F4E4D1F4D6A0400A79C4E /* BaseNavigationController.m */,
 			);
-			path = BaseNavigationController;
+			name = BaseNavigationController;
+			path = ../BaseNavigationController;
 			sourceTree = "<group>";
 		};
-		05A8FC181F221D3C00AC1D61 /* BaseTableViewCell */ = {
+		05A8FC191F221D4100AC1D61 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
+				056F4E501F4D6B7700A79C4E /* BaseViewController.h */,
+				056F4E511F4D6B7700A79C4E /* BaseViewController.m */,
 			);
-			path = BaseTableViewCell;
+			name = BaseViewController;
+			path = ../BaseUIViewController;
 			sourceTree = "<group>";
 		};
-		05A8FC191F221D4100AC1D61 /* BaseUIViewController */ = {
+		9E7EBE8CE236A3CC802D2FFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				485300E72CF8DE9FF4CE6750 /* libPods-EmulateWeChatDemo.a */,
 			);
-			path = BaseUIViewController;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D47B78843EAD79EF142B0D5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C0D2CF61FCBF8A3A6F7F5 /* Pods-EmulateWeChatDemo.debug.xcconfig */,
+				56513C02BC34AE83C3D192AD /* Pods-EmulateWeChatDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,9 +410,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05A8FC031F2201E800AC1D61 /* Build configuration list for PBXNativeTarget "EmulateWeChatDemo" */;
 			buildPhases = (
+				C9D7BBE86AD705A240B23B69 /* [CP] Check Pods Manifest.lock */,
 				05A8FBD21F2201E800AC1D61 /* Sources */,
 				05A8FBD31F2201E800AC1D61 /* Frameworks */,
 				05A8FBD41F2201E800AC1D61 /* Resources */,
+				31AA09F528975D4B2B0029E1 /* [CP] Embed Pods Frameworks */,
+				CF809ABA8DC26FBC4AB5AEB7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,8 +515,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05A8FC101F22027F00AC1D61 /* CommentViewController.xib in Resources */,
+				0585C5F71F4EBF8200AACFB0 /* TimeLineTableViewCell.xib in Resources */,
+				059DBDEC1F4D711C00357D0A /* TimeLineViewController.xib in Resources */,
+				056F4E571F4D6B8E00A79C4E /* DiscoverViewController.xib in Resources */,
+				0585C59F1F4E84E900AACFB0 /* DiscoverVC.xcassets in Resources */,
+				0585C5EA1F4E8D7500AACFB0 /* TimeLineTableHeaderView.xib in Resources */,
 				05A8FBE91F2201E800AC1D61 /* LaunchScreen.storyboard in Resources */,
+				059DBE0C1F4D8A0700357D0A /* data.json in Resources */,
+				05134BA31F4ECF8E0016A8E5 /* CommentTableViewCell.xib in Resources */,
+				056F4E421F4D640200A79C4E /* RootViewController.xib in Resources */,
+				059DBDFE1F4D765E00357D0A /* DiscoverTableViewCell.xib in Resources */,
 				05A8FBE61F2201E800AC1D61 /* Assets.xcassets in Resources */,
 				05A8FBE41F2201E800AC1D61 /* Main.storyboard in Resources */,
 			);
@@ -322,15 +546,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31AA09F528975D4B2B0029E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmulateWeChatDemo/Pods-EmulateWeChatDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9D7BBE86AD705A240B23B69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF809ABA8DC26FBC4AB5AEB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmulateWeChatDemo/Pods-EmulateWeChatDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		05A8FBD21F2201E800AC1D61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				059DBE011F4D81BB00357D0A /* BaseModel.m in Sources */,
+				059DBDFD1F4D765E00357D0A /* DiscoverTableViewCell.m in Sources */,
 				05A8FC161F221D3300AC1D61 /* AppDelegate.m in Sources */,
-				05A8FC0F1F22027F00AC1D61 /* CommentViewController.m in Sources */,
-				05A8FBE11F2201E800AC1D61 /* ViewController.m in Sources */,
+				056F4E561F4D6B8E00A79C4E /* DiscoverViewController.m in Sources */,
+				056F4E4E1F4D6A0400A79C4E /* BaseNavigationController.m in Sources */,
 				05A8FBDB1F2201E800AC1D61 /* main.m in Sources */,
+				05134BA21F4ECF8E0016A8E5 /* CommentTableViewCell.m in Sources */,
+				0585C5E81F4E8D6C00AACFB0 /* TimeLineTableHeaderView.m in Sources */,
+				056F4E521F4D6B7700A79C4E /* BaseViewController.m in Sources */,
+				0585C5F61F4EBF8200AACFB0 /* TimeLineTableViewCell.m in Sources */,
+				059DBE051F4D820B00357D0A /* MessageModel.m in Sources */,
+				059DBDEB1F4D711C00357D0A /* TimeLineViewController.m in Sources */,
+				05134BAC1F4ED2A60016A8E5 /* CommentModel.m in Sources */,
+				056F4E411F4D640200A79C4E /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +759,7 @@
 		};
 		05A8FC041F2201E800AC1D61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A6C0D2CF61FCBF8A3A6F7F5 /* Pods-EmulateWeChatDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XB9G77HU3C;
@@ -490,6 +773,7 @@
 		};
 		05A8FC051F2201E800AC1D61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56513C02BC34AE83C3D192AD /* Pods-EmulateWeChatDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XB9G77HU3C;
@@ -570,6 +854,7 @@
 				05A8FC051F2201E800AC1D61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05A8FC061F2201E800AC1D61 /* Build configuration list for PBXNativeTarget "EmulateWeChatDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +863,7 @@
 				05A8FC081F2201E800AC1D61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05A8FC091F2201E800AC1D61 /* Build configuration list for PBXNativeTarget "EmulateWeChatDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +872,7 @@
 				05A8FC0B1F2201E800AC1D61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
