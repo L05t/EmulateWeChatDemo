@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "CommentModel.h"
+#import <YYText.h>
+
 
 @interface CommentTableViewCell : UITableViewCell
+
+@property (weak, nonatomic) IBOutlet YYLabel *contentLabel;
 
 ///处理点赞的人列表
 - (void)configCellWithLikeUsers:(NSArray *)likeUsers;

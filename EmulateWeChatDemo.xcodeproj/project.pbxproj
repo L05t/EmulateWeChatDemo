@@ -16,6 +16,8 @@
 		056F4E521F4D6B7700A79C4E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056F4E511F4D6B7700A79C4E /* BaseViewController.m */; };
 		056F4E561F4D6B8E00A79C4E /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056F4E541F4D6B8E00A79C4E /* DiscoverViewController.m */; };
 		056F4E571F4D6B8E00A79C4E /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056F4E551F4D6B8E00A79C4E /* DiscoverViewController.xib */; };
+		05720F6D1F541D3F0086088A /* JGGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05720F6C1F541D3F0086088A /* JGGView.m */; };
+		05720F6F1F541D4A0086088A /* JGGView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05720F6E1F541D4A0086088A /* JGGView.xib */; };
 		0585C59F1F4E84E900AACFB0 /* DiscoverVC.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0585C59E1F4E84E900AACFB0 /* DiscoverVC.xcassets */; };
 		0585C5E81F4E8D6C00AACFB0 /* TimeLineTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0585C5E71F4E8D6C00AACFB0 /* TimeLineTableHeaderView.m */; };
 		0585C5EA1F4E8D7500AACFB0 /* TimeLineTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0585C5E91F4E8D7500AACFB0 /* TimeLineTableHeaderView.xib */; };
@@ -61,6 +63,7 @@
 		05134BA11F4ECF8E0016A8E5 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		05134BAA1F4ED2A60016A8E5 /* CommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentModel.h; sourceTree = "<group>"; };
 		05134BAB1F4ED2A60016A8E5 /* CommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentModel.m; sourceTree = "<group>"; };
+		056B777D1F4FD32900F0CD80 /* UIDefin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDefin.h; sourceTree = "<group>"; };
 		056F4E3E1F4D640200A79C4E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		056F4E3F1F4D640200A79C4E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		056F4E401F4D640200A79C4E /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
@@ -71,6 +74,9 @@
 		056F4E531F4D6B8E00A79C4E /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		056F4E541F4D6B8E00A79C4E /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
 		056F4E551F4D6B8E00A79C4E /* DiscoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverViewController.xib; sourceTree = "<group>"; };
+		05720F6B1F541D3F0086088A /* JGGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGGView.h; sourceTree = "<group>"; };
+		05720F6C1F541D3F0086088A /* JGGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGGView.m; sourceTree = "<group>"; };
+		05720F6E1F541D4A0086088A /* JGGView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JGGView.xib; sourceTree = "<group>"; };
 		0585C59E1F4E84E900AACFB0 /* DiscoverVC.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DiscoverVC.xcassets; sourceTree = "<group>"; };
 		0585C5E61F4E8D6C00AACFB0 /* TimeLineTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineTableHeaderView.h; sourceTree = "<group>"; };
 		0585C5E71F4E8D6C00AACFB0 /* TimeLineTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineTableHeaderView.m; sourceTree = "<group>"; };
@@ -139,6 +145,14 @@
 			children = (
 			);
 			name = ThirdLib;
+			sourceTree = "<group>";
+		};
+		056B777C1F4FD31500F0CD80 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				056B777D1F4FD32900F0CD80 /* UIDefin.h */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		056F4E3D1F4D63D300A79C4E /* TabBarController */ = {
@@ -218,6 +232,9 @@
 				05134B9F1F4ECF8E0016A8E5 /* CommentTableViewCell.h */,
 				05134BA01F4ECF8E0016A8E5 /* CommentTableViewCell.m */,
 				05134BA11F4ECF8E0016A8E5 /* CommentTableViewCell.xib */,
+				05720F6B1F541D3F0086088A /* JGGView.h */,
+				05720F6C1F541D3F0086088A /* JGGView.m */,
+				05720F6E1F541D4A0086088A /* JGGView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -315,6 +332,7 @@
 		05A8FBD81F2201E800AC1D61 /* EmulateWeChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				056B777C1F4FD31500F0CD80 /* Util */,
 				05134B971F4ECEA20016A8E5 /* ThirdLib */,
 				05A8FC131F221D3300AC1D61 /* AppDelegate */,
 				059DBDEE1F4D739900357D0A /* Model */,
@@ -524,6 +542,7 @@
 				059DBE0C1F4D8A0700357D0A /* data.json in Resources */,
 				05134BA31F4ECF8E0016A8E5 /* CommentTableViewCell.xib in Resources */,
 				056F4E421F4D640200A79C4E /* RootViewController.xib in Resources */,
+				05720F6F1F541D4A0086088A /* JGGView.xib in Resources */,
 				059DBDFE1F4D765E00357D0A /* DiscoverTableViewCell.xib in Resources */,
 				05A8FBE61F2201E800AC1D61 /* Assets.xcassets in Resources */,
 				05A8FBE41F2201E800AC1D61 /* Main.storyboard in Resources */,
@@ -613,6 +632,7 @@
 				059DBDEB1F4D711C00357D0A /* TimeLineViewController.m in Sources */,
 				05134BAC1F4ED2A60016A8E5 /* CommentModel.m in Sources */,
 				056F4E411F4D640200A79C4E /* RootViewController.m in Sources */,
+				05720F6D1F541D3F0086088A /* JGGView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

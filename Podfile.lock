@@ -1,0 +1,26 @@
+PODS:
+  - Masonry (1.0.2)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - SVProgressHUD (2.0.4)
+  - UITableView+FDTemplateLayoutCell (1.5.beta)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - Masonry (~> 1.0.2)
+  - SDWebImage (~> 3.7.6)
+  - SVProgressHUD (~> 2.0.4)
+  - UITableView+FDTemplateLayoutCell (~> 1.5.beta)
+  - YYText (~> 1.0.7)
+
+SPEC CHECKSUMS:
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
+  UITableView+FDTemplateLayoutCell: 02b508ab1cb4cea16a8c17ac83d2cd1fd72124f9
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 5978002388620b8f414c65c871e67983881ea396
+
+COCOAPODS: 1.2.0

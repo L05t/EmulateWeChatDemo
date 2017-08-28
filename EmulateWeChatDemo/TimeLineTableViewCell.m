@@ -11,9 +11,8 @@
 #import "UIImageView+WebCache.h"
 #import "CommentTableViewCell.h"
 #import "CommentModel.h"
-#import "CommentTableViewCell.h"
 #import <Masonry.h>
-
+#import "JGGView.h"
 static NSString *KCommentTableViewCell = @"CommentTableViewCell";
 
 @interface TimeLineTableViewCell ()<UITableViewDelegate,UITableViewDataSource>
@@ -23,6 +22,10 @@ static NSString *KCommentTableViewCell = @"CommentTableViewCell";
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIView *JGGView;
+@property (nonatomic, strong) JGGView *jggView;
+@property (strong, nonatomic) CommentTableViewCell *tableViewCell;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *jggViewHeight;
 
 @end
 
@@ -31,9 +34,25 @@ static NSString *KCommentTableViewCell = @"CommentTableViewCell";
 - (void)awakeFromNib {
     [super awakeFromNib];
     
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.tableFooterView = [[UIView alloc] init];
+    
     [self.tableView registerNib:[UINib nibWithNibName:KCommentTableViewCell bundle:nil] forCellReuseIdentifier:KCommentTableViewCell];
+    
+#warning 没有这句话，label不折行
+//    self.contentLabel.preferredMaxLayoutWidth = self.contentLabel.frame.size.width;
 
-    // Initialization code
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 14;
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(100);
+    }];
+    
+    self.jggView = [[JGGView alloc] initWithJGGViewFrame:self.JGGView.frame];
+    [self.jggView showView:self.JGGView];
+    
 }
 
 
@@ -50,10 +69,21 @@ static NSString *KCommentTableViewCell = @"CommentTableViewCell";
     self.contentLabel.text = model.message;
     [self.photo sd_setImageWithURL:[NSURL URLWithString:model.photo] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
     }];
+    if ([model.messageBigPics count] == 0) {
+        self.jggViewHeight.constant = 0;
+        [self.jggView removeFromSuperview];
+    }else{
+        if ([model.messageBigPics count] <= 3){
+            self.jggViewHeight.constant = 85;
+        }else if ([model.messageBigPics count] <= 6){
+            self.jggViewHeight.constant = 170;
+        }else{
+            self.jggViewHeight.constant = 250;
+        }
+    }
     self.timeLabel.text = model.timeTag;
-    
-}
 
+}
 #pragma mark - UITableViewDelegate,UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -73,8 +103,8 @@ static NSString *KCommentTableViewCell = @"CommentTableViewCell";
         }
     }
     
-    NSInteger index = self.model.likeUsers.count?(indexPath.row-1):(indexPath.row);
-    CommentModel *model = [self.model.commentMessages objectAtIndex:index];
+    NSInteger index = self.model.likeUsers.count?indexPath.row - 1:indexPath.row;
+    CommentModel *model = [[CommentModel alloc] initWithJSONDict:[self.model.commentMessages objectAtIndex:index]];
     [cell configCellWithModel:model];
     return cell;
 }

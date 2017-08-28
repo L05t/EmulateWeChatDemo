@@ -10,7 +10,7 @@
 #import "MessageModel.h"
 #import "TimeLineTableViewCell.h"
 #import "TimeLineTableHeaderView.h"
-
+#import <UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell.h>
 
 static NSString *KTimeLineTableViewCell = @"TimeLineTableViewCell";
 
@@ -63,29 +63,33 @@ static NSString *KTimeLineTableViewCell = @"TimeLineTableViewCell";
 }
 
 
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    CGFloat height = [tableView fd_heightForCellWithIdentifier:KTimeLineTableViewCell cacheByIndexPath:indexPath configuration:^(TimeLineTableViewCell *cell) {
+//        [self configureCell:cell atIndexPath:indexPath];
+//    }];
+//    return height;
+//}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *indexString = [NSString stringWithFormat:@"%zd",indexPath.row];
-    NSLog(@"cellForRowAtIndexPath方法%@",indexString);
-//    textTabelViewCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:KtextTabelViewCellTableViewCell forIndexPath:indexPath];
+    NSLog(@"填装cell的方法%@",indexString);
     TimeLineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:KTimeLineTableViewCell];
-
-    cell.model = self.dataSource[indexPath.row];
-    
+    [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
+
+- (void)configureCell:(TimeLineTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    cell.fd_enforceFrameLayout = NO;
+    cell.model = self.dataSource[indexPath.row];
+}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [self.dataSource count];
 }
 
-
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    NSString *indexString = [NSString stringWithFormat:@"%zd",indexPath.row];
-//    NSLog(@"heightForRowAtIndexPath方法%@",indexString);
-//    id model = self.dataSource[indexPath.row];
-//    return [self.tableView cellHeightForIndexPath:indexPath model:model keyPath:@"model" cellClass:[textTabelViewCellTableViewCell class] contentViewWidth:246];
-//    return reloadCellHeight;
-//}
 
 #pragma mark - textTableViewCellTableViewCellDelegate
 

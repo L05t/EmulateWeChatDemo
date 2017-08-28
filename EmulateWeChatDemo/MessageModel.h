@@ -28,4 +28,5 @@
 @property (copy, nonatomic) NSArray *commentMessages;
 @property (copy, nonatomic) NSArray *messageSmallPics;
 
+@property (strong, nonatomic) NSIndexPath *indexPath;
 @end

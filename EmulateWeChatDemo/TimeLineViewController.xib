@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kYk-ZK-4vA">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kYk-ZK-4vA">
                     <rect key="frame" x="0.0" y="-100" width="375" height="767"/>
                     <color key="backgroundColor" red="0.17599505186080933" green="0.19215798377990723" blue="0.19638237357139587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
@@ -32,7 +32,8 @@
             <color key="backgroundColor" red="0.17599505186080933" green="0.19215798377990723" blue="0.19638237357139587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="kYk-ZK-4vA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-100" id="5It-S0-4NB"/>
-                <constraint firstItem="kYk-ZK-4vA" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Cmp-wm-il2"/>
+                <constraint firstAttribute="trailing" secondItem="kYk-ZK-4vA" secondAttribute="trailing" id="YMC-wo-2xQ"/>
+                <constraint firstItem="kYk-ZK-4vA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ne5-Nd-i51"/>
                 <constraint firstAttribute="bottom" secondItem="kYk-ZK-4vA" secondAttribute="bottom" id="s0y-AP-h4i"/>
                 <constraint firstItem="kYk-ZK-4vA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zRx-XR-iy6"/>
             </constraints>
