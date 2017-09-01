@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,21 +16,21 @@
             <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Him-J6-F2D">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbumReflashIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Him-J6-F2D">
                     <rect key="frame" x="2" y="2" width="80.5" height="80.5"/>
-                    <color key="backgroundColor" red="0.99859040980000002" green="0.72590535879999996" blue="0.035885855559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="36C-ku-hys">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbumReflashIcon" translatesAutoresizingMaskIntoConstraints="NO" id="36C-ku-hys">
                     <rect key="frame" x="84.5" y="2" width="81" height="80"/>
-                    <color key="backgroundColor" red="0.99859040980000002" green="0.72590535879999996" blue="0.035885855559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Jwh-UH-2Cs"/>
+                        <constraint firstAttribute="width" constant="81" id="zG8-KB-y6J"/>
+                    </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ozg-xk-PQQ">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbumReflashIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ozg-xk-PQQ">
                     <rect key="frame" x="167.5" y="2" width="80.5" height="80"/>
-                    <color key="backgroundColor" red="0.99859040980000002" green="0.72590535879999996" blue="0.035885855559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Htk-Zr-30w">
-                    <rect key="frame" x="2" y="84.5" width="80.5" height="81"/>
-                    <color key="backgroundColor" red="0.38276851179999999" green="0.57588827610000004" blue="0.94108587499999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gz5-5x-rmI">
                     <rect key="frame" x="2" y="167.5" width="80.5" height="80.5"/>
@@ -38,6 +39,9 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dXX-Jg-ow8">
                     <rect key="frame" x="84.5" y="84" width="81" height="81"/>
                     <color key="backgroundColor" red="0.38276851179999999" green="0.57588827610000004" blue="0.94108587499999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="dXX-Jg-ow8" secondAttribute="height" multiplier="1:1" id="OWK-cA-7E4"/>
+                    </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPQ-No-P7L">
                     <rect key="frame" x="167.5" y="84" width="80.5" height="81"/>
@@ -51,60 +55,65 @@
                     <rect key="frame" x="167.5" y="167" width="80.5" height="81"/>
                     <color key="backgroundColor" red="0.39120057229999999" green="0.41434991360000001" blue="0.48906898500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Htk-Zr-30w">
+                    <rect key="frame" x="2" y="84" width="80.5" height="81"/>
+                    <color key="backgroundColor" red="0.38276851179999999" green="0.57588827610000004" blue="0.94108587499999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="ozg-xk-PQQ" firstAttribute="width" secondItem="36C-ku-hys" secondAttribute="width" id="44H-HV-TcG"/>
-                <constraint firstItem="DA4-mp-4fs" firstAttribute="height" secondItem="dXX-Jg-ow8" secondAttribute="height" id="46O-et-w7g"/>
-                <constraint firstItem="ozg-xk-PQQ" firstAttribute="centerY" secondItem="36C-ku-hys" secondAttribute="centerY" id="56N-io-JRT"/>
-                <constraint firstAttribute="trailing" secondItem="ZPQ-No-P7L" secondAttribute="trailing" constant="2" id="68h-Nu-b8c"/>
-                <constraint firstAttribute="bottom" secondItem="DA4-mp-4fs" secondAttribute="bottom" constant="2" id="7Qb-M7-FmT"/>
-                <constraint firstItem="36C-ku-hys" firstAttribute="leading" secondItem="Him-J6-F2D" secondAttribute="trailing" constant="2" id="B1Y-iV-xwR"/>
-                <constraint firstItem="Gz5-5x-rmI" firstAttribute="top" secondItem="Htk-Zr-30w" secondAttribute="bottom" constant="2" id="Bcg-bv-QLb"/>
-                <constraint firstItem="yzW-hk-K7R" firstAttribute="top" secondItem="ZPQ-No-P7L" secondAttribute="bottom" constant="2" id="C7a-qu-7i5"/>
-                <constraint firstAttribute="bottom" secondItem="Gz5-5x-rmI" secondAttribute="bottom" constant="2" id="Dfi-Us-PkW"/>
-                <constraint firstItem="Gz5-5x-rmI" firstAttribute="height" secondItem="Htk-Zr-30w" secondAttribute="height" id="EAZ-dN-wET"/>
-                <constraint firstItem="dXX-Jg-ow8" firstAttribute="leading" secondItem="Htk-Zr-30w" secondAttribute="trailing" constant="2" id="ECx-bv-05f"/>
-                <constraint firstItem="Htk-Zr-30w" firstAttribute="height" secondItem="Him-J6-F2D" secondAttribute="height" id="EK1-f3-TPM"/>
-                <constraint firstItem="36C-ku-hys" firstAttribute="width" secondItem="Him-J6-F2D" secondAttribute="width" id="EWn-qT-wrJ"/>
-                <constraint firstItem="DA4-mp-4fs" firstAttribute="top" secondItem="dXX-Jg-ow8" secondAttribute="bottom" constant="2" id="JYd-Kw-3S7"/>
-                <constraint firstItem="Him-J6-F2D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="QwA-is-2Dz"/>
-                <constraint firstAttribute="bottom" secondItem="yzW-hk-K7R" secondAttribute="bottom" constant="2" id="UNd-8K-OPr"/>
-                <constraint firstItem="Htk-Zr-30w" firstAttribute="leading" secondItem="Him-J6-F2D" secondAttribute="leading" id="Udo-3Q-8mk"/>
-                <constraint firstItem="Gz5-5x-rmI" firstAttribute="leading" secondItem="Htk-Zr-30w" secondAttribute="leading" id="WHK-Tz-6Bg"/>
-                <constraint firstItem="Gz5-5x-rmI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="XgU-XT-HT5"/>
-                <constraint firstItem="Him-J6-F2D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="Xya-71-tRo"/>
-                <constraint firstItem="dXX-Jg-ow8" firstAttribute="top" secondItem="36C-ku-hys" secondAttribute="bottom" constant="2" id="YXZ-Rq-tvD"/>
-                <constraint firstItem="yzW-hk-K7R" firstAttribute="width" secondItem="DA4-mp-4fs" secondAttribute="width" id="Zcm-em-wu7"/>
-                <constraint firstItem="Htk-Zr-30w" firstAttribute="top" secondItem="Him-J6-F2D" secondAttribute="bottom" constant="2" id="a8i-T9-4tW"/>
-                <constraint firstItem="ozg-xk-PQQ" firstAttribute="leading" secondItem="36C-ku-hys" secondAttribute="trailing" constant="2" id="aNt-CK-0hG"/>
-                <constraint firstItem="36C-ku-hys" firstAttribute="centerY" secondItem="Him-J6-F2D" secondAttribute="centerY" id="bpu-YR-Ujh"/>
-                <constraint firstItem="ZPQ-No-P7L" firstAttribute="leading" secondItem="dXX-Jg-ow8" secondAttribute="trailing" constant="2" id="djX-g6-TJL"/>
-                <constraint firstItem="dXX-Jg-ow8" firstAttribute="width" secondItem="Htk-Zr-30w" secondAttribute="width" id="fln-z6-UOq"/>
-                <constraint firstItem="yzW-hk-K7R" firstAttribute="leading" secondItem="DA4-mp-4fs" secondAttribute="trailing" constant="2" id="ftc-bE-h4y"/>
-                <constraint firstItem="ozg-xk-PQQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="kP3-PG-QZh"/>
-                <constraint firstItem="DA4-mp-4fs" firstAttribute="width" secondItem="Gz5-5x-rmI" secondAttribute="width" id="kST-Pf-aLz"/>
-                <constraint firstAttribute="trailing" secondItem="ozg-xk-PQQ" secondAttribute="trailing" constant="2" id="lkA-Ea-p4X"/>
-                <constraint firstItem="yzW-hk-K7R" firstAttribute="height" secondItem="ZPQ-No-P7L" secondAttribute="height" id="ly5-eg-IAv"/>
-                <constraint firstItem="ZPQ-No-P7L" firstAttribute="top" secondItem="ozg-xk-PQQ" secondAttribute="bottom" constant="2" id="qhk-V3-bk9"/>
-                <constraint firstItem="36C-ku-hys" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="tin-nv-Xdh"/>
-                <constraint firstItem="DA4-mp-4fs" firstAttribute="leading" secondItem="Gz5-5x-rmI" secondAttribute="trailing" constant="2" id="uMU-mq-g0o"/>
-                <constraint firstItem="ZPQ-No-P7L" firstAttribute="width" secondItem="dXX-Jg-ow8" secondAttribute="width" id="wer-de-pr7"/>
-                <constraint firstAttribute="trailing" secondItem="yzW-hk-K7R" secondAttribute="trailing" constant="2" id="wgh-T2-Gu2"/>
+                <constraint firstItem="ozg-xk-PQQ" firstAttribute="leading" secondItem="36C-ku-hys" secondAttribute="trailing" constant="2" id="0cF-CY-8IE"/>
+                <constraint firstItem="dXX-Jg-ow8" firstAttribute="leading" secondItem="Htk-Zr-30w" secondAttribute="trailing" constant="2" id="1Ht-ba-tb6"/>
+                <constraint firstItem="Htk-Zr-30w" firstAttribute="width" secondItem="dXX-Jg-ow8" secondAttribute="width" id="1ht-4u-Qo4"/>
+                <constraint firstItem="ozg-xk-PQQ" firstAttribute="width" secondItem="36C-ku-hys" secondAttribute="width" id="2bk-Ee-EyI"/>
+                <constraint firstItem="dXX-Jg-ow8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2u2-Hg-MbC"/>
+                <constraint firstItem="Htk-Zr-30w" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="6cz-lY-HKG"/>
+                <constraint firstItem="ZPQ-No-P7L" firstAttribute="width" secondItem="dXX-Jg-ow8" secondAttribute="width" id="6wN-rT-ERv"/>
+                <constraint firstItem="Htk-Zr-30w" firstAttribute="height" secondItem="dXX-Jg-ow8" secondAttribute="height" id="7OF-Sn-Oxk"/>
+                <constraint firstAttribute="trailing" secondItem="ZPQ-No-P7L" secondAttribute="trailing" constant="2" id="7Rn-9C-jim"/>
+                <constraint firstItem="ZPQ-No-P7L" firstAttribute="leading" secondItem="dXX-Jg-ow8" secondAttribute="trailing" constant="2" id="98l-u0-ctB"/>
+                <constraint firstItem="Gz5-5x-rmI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="BNr-es-9Ck"/>
+                <constraint firstItem="36C-ku-hys" firstAttribute="centerX" secondItem="dXX-Jg-ow8" secondAttribute="centerX" id="F0G-0w-lpC"/>
+                <constraint firstItem="ozg-xk-PQQ" firstAttribute="centerY" secondItem="36C-ku-hys" secondAttribute="centerY" id="JGd-Lf-tek"/>
+                <constraint firstItem="Htk-Zr-30w" firstAttribute="centerY" secondItem="dXX-Jg-ow8" secondAttribute="centerY" id="M8G-gf-2Hg"/>
+                <constraint firstItem="ZPQ-No-P7L" firstAttribute="centerY" secondItem="dXX-Jg-ow8" secondAttribute="centerY" id="OGN-FE-IGw"/>
+                <constraint firstItem="DA4-mp-4fs" firstAttribute="leading" secondItem="Gz5-5x-rmI" secondAttribute="trailing" constant="2" id="Qgd-bd-WCX"/>
+                <constraint firstItem="Gz5-5x-rmI" firstAttribute="height" secondItem="DA4-mp-4fs" secondAttribute="height" id="TRC-4Y-eST"/>
+                <constraint firstItem="yzW-hk-K7R" firstAttribute="width" secondItem="DA4-mp-4fs" secondAttribute="width" id="Tx6-eE-gCb"/>
+                <constraint firstItem="ozg-xk-PQQ" firstAttribute="height" secondItem="36C-ku-hys" secondAttribute="height" id="U57-wZ-HCg"/>
+                <constraint firstItem="DA4-mp-4fs" firstAttribute="centerX" secondItem="dXX-Jg-ow8" secondAttribute="centerX" id="YOB-yU-6f1"/>
+                <constraint firstItem="DA4-mp-4fs" firstAttribute="width" secondItem="dXX-Jg-ow8" secondAttribute="width" id="ewX-RW-wyx"/>
+                <constraint firstItem="DA4-mp-4fs" firstAttribute="height" secondItem="dXX-Jg-ow8" secondAttribute="height" id="fZG-K8-uhR"/>
+                <constraint firstItem="yzW-hk-K7R" firstAttribute="leading" secondItem="DA4-mp-4fs" secondAttribute="trailing" constant="2" id="iKQ-kA-Bom"/>
+                <constraint firstItem="Gz5-5x-rmI" firstAttribute="centerY" secondItem="DA4-mp-4fs" secondAttribute="centerY" id="pL4-Py-n08"/>
+                <constraint firstItem="Gz5-5x-rmI" firstAttribute="width" secondItem="DA4-mp-4fs" secondAttribute="width" id="pg7-bO-yXo"/>
+                <constraint firstItem="DA4-mp-4fs" firstAttribute="top" secondItem="dXX-Jg-ow8" secondAttribute="bottom" constant="2" id="q2i-64-urU"/>
+                <constraint firstItem="yzW-hk-K7R" firstAttribute="centerY" secondItem="DA4-mp-4fs" secondAttribute="centerY" id="rDV-sy-TPR"/>
+                <constraint firstItem="dXX-Jg-ow8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rHn-rJ-Lih"/>
+                <constraint firstItem="Him-J6-F2D" firstAttribute="height" secondItem="36C-ku-hys" secondAttribute="height" id="t5s-zN-tbP"/>
+                <constraint firstItem="dXX-Jg-ow8" firstAttribute="top" secondItem="36C-ku-hys" secondAttribute="bottom" constant="2" id="twN-Pm-SBA"/>
+                <constraint firstItem="Him-J6-F2D" firstAttribute="width" secondItem="36C-ku-hys" secondAttribute="width" id="tyQ-2D-CCe"/>
+                <constraint firstItem="36C-ku-hys" firstAttribute="leading" secondItem="Him-J6-F2D" secondAttribute="trailing" constant="2" id="vrh-7x-d7r"/>
+                <constraint firstItem="yzW-hk-K7R" firstAttribute="height" secondItem="DA4-mp-4fs" secondAttribute="height" id="wSk-Fr-hBX"/>
+                <constraint firstItem="ZPQ-No-P7L" firstAttribute="height" secondItem="dXX-Jg-ow8" secondAttribute="height" id="wzk-Lm-twD"/>
+                <constraint firstItem="Him-J6-F2D" firstAttribute="centerY" secondItem="36C-ku-hys" secondAttribute="centerY" id="xqB-cw-f4X"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="img1" destination="Him-J6-F2D" id="OsR-7X-yoz"/>
-                <outlet property="img2" destination="36C-ku-hys" id="RNw-t5-3w8"/>
-                <outlet property="img3" destination="ozg-xk-PQQ" id="uCn-kh-On5"/>
-                <outlet property="img4" destination="Htk-Zr-30w" id="tuM-s5-yPc"/>
-                <outlet property="img5" destination="dXX-Jg-ow8" id="lK5-62-EDm"/>
-                <outlet property="img6" destination="ZPQ-No-P7L" id="5jH-u3-hJS"/>
-                <outlet property="img7" destination="Gz5-5x-rmI" id="l0B-Ct-ksC"/>
-                <outlet property="img8" destination="DA4-mp-4fs" id="Lk8-jT-Esi"/>
-                <outlet property="img9" destination="yzW-hk-K7R" id="rik-EB-60C"/>
+                <outlet property="img1" destination="Him-J6-F2D" id="HZt-WD-Gah"/>
+                <outlet property="img2" destination="36C-ku-hys" id="aOB-qs-W57"/>
+                <outlet property="img3" destination="ozg-xk-PQQ" id="g4U-20-3By"/>
+                <outlet property="img4" destination="Htk-Zr-30w" id="61l-4m-mSz"/>
+                <outlet property="img5" destination="dXX-Jg-ow8" id="O0L-Mt-51S"/>
+                <outlet property="img6" destination="ZPQ-No-P7L" id="Pr6-kT-DIj"/>
+                <outlet property="img7" destination="Gz5-5x-rmI" id="oOL-HC-2Za"/>
+                <outlet property="img8" destination="DA4-mp-4fs" id="YjS-Xm-CwM"/>
+                <outlet property="img9" destination="yzW-hk-K7R" id="TDw-du-K46"/>
             </connections>
             <point key="canvasLocation" x="56" y="5"/>
         </view>
     </objects>
+    <resources>
+        <image name="AlbumReflashIcon" width="30" height="30"/>
+    </resources>
 </document>

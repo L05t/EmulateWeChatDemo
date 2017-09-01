@@ -11,7 +11,6 @@
 
 
 @interface JGGView ()
-
 @property (weak, nonatomic) IBOutlet UIImageView *img1;
 @property (weak, nonatomic) IBOutlet UIImageView *img2;
 @property (weak, nonatomic) IBOutlet UIImageView *img3;
@@ -34,6 +33,10 @@
         self = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil].lastObject;
     }
     return self;
+}
+
+- (void)awakeFromNib{
+    [super awakeFromNib];
 }
 
 - (void)showView:(UIView *)view{

@@ -10,7 +10,7 @@
 #import "MessageModel.h"
 #import "TimeLineTableViewCell.h"
 #import "TimeLineTableHeaderView.h"
-#import <UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell.h>
+//#import <UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell.h>
 
 static NSString *KTimeLineTableViewCell = @"TimeLineTableViewCell";
 
@@ -76,12 +76,14 @@ static NSString *KTimeLineTableViewCell = @"TimeLineTableViewCell";
     NSString *indexString = [NSString stringWithFormat:@"%zd",indexPath.row];
     NSLog(@"填装cell的方法%@",indexString);
     TimeLineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:KTimeLineTableViewCell];
-    [self configureCell:cell atIndexPath:indexPath];
+    cell.model = self.dataSource[indexPath.row];
+
+//    [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 
 - (void)configureCell:(TimeLineTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    cell.fd_enforceFrameLayout = NO;
+//    cell.fd_enforceFrameLayout = NO;
     cell.model = self.dataSource[indexPath.row];
 }
 
@@ -90,13 +92,6 @@ static NSString *KTimeLineTableViewCell = @"TimeLineTableViewCell";
     return [self.dataSource count];
 }
 
-
-#pragma mark - textTableViewCellTableViewCellDelegate
-
-- (void)reloadIndexPathCell:(CGFloat)cellHeight indexPath:(NSIndexPath *)indexPath{
-    reloadCellHeight = cellHeight;
-    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-}
 
 
 

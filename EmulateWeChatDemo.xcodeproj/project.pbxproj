@@ -23,6 +23,9 @@
 		0585C5EA1F4E8D7500AACFB0 /* TimeLineTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0585C5E91F4E8D7500AACFB0 /* TimeLineTableHeaderView.xib */; };
 		0585C5F61F4EBF8200AACFB0 /* TimeLineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0585C5F41F4EBF8200AACFB0 /* TimeLineTableViewCell.m */; };
 		0585C5F71F4EBF8200AACFB0 /* TimeLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0585C5F51F4EBF8200AACFB0 /* TimeLineTableViewCell.xib */; };
+		058F38C91F551574003BDC4E /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 058F38C31F551574003BDC4E /* SDBrowserImageView.m */; };
+		058F38CA1F551574003BDC4E /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 058F38C51F551574003BDC4E /* SDPhotoBrowser.m */; };
+		058F38CB1F551574003BDC4E /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 058F38C81F551574003BDC4E /* SDWaitingView.m */; };
 		059DBDEB1F4D711C00357D0A /* TimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 059DBDE91F4D711C00357D0A /* TimeLineViewController.m */; };
 		059DBDEC1F4D711C00357D0A /* TimeLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 059DBDEA1F4D711C00357D0A /* TimeLineViewController.xib */; };
 		059DBDFD1F4D765E00357D0A /* DiscoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 059DBDFB1F4D765E00357D0A /* DiscoverTableViewCell.m */; };
@@ -84,6 +87,13 @@
 		0585C5F31F4EBF8200AACFB0 /* TimeLineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineTableViewCell.h; sourceTree = "<group>"; };
 		0585C5F41F4EBF8200AACFB0 /* TimeLineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineTableViewCell.m; sourceTree = "<group>"; };
 		0585C5F51F4EBF8200AACFB0 /* TimeLineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeLineTableViewCell.xib; sourceTree = "<group>"; };
+		058F38C21F551574003BDC4E /* SDBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBrowserImageView.h; sourceTree = "<group>"; };
+		058F38C31F551574003BDC4E /* SDBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBrowserImageView.m; sourceTree = "<group>"; };
+		058F38C41F551574003BDC4E /* SDPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowser.h; sourceTree = "<group>"; };
+		058F38C51F551574003BDC4E /* SDPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoBrowser.m; sourceTree = "<group>"; };
+		058F38C61F551574003BDC4E /* SDPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		058F38C71F551574003BDC4E /* SDWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWaitingView.h; sourceTree = "<group>"; };
+		058F38C81F551574003BDC4E /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
 		059DBDE81F4D711C00357D0A /* TimeLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineViewController.h; sourceTree = "<group>"; };
 		059DBDE91F4D711C00357D0A /* TimeLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineViewController.m; sourceTree = "<group>"; };
 		059DBDEA1F4D711C00357D0A /* TimeLineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeLineViewController.xib; sourceTree = "<group>"; };
@@ -143,6 +153,7 @@
 		05134B971F4ECEA20016A8E5 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				058F38C11F551574003BDC4E /* SDPhotoBrowser */,
 			);
 			name = ThirdLib;
 			sourceTree = "<group>";
@@ -244,6 +255,20 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		058F38C11F551574003BDC4E /* SDPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				058F38C21F551574003BDC4E /* SDBrowserImageView.h */,
+				058F38C31F551574003BDC4E /* SDBrowserImageView.m */,
+				058F38C41F551574003BDC4E /* SDPhotoBrowser.h */,
+				058F38C51F551574003BDC4E /* SDPhotoBrowser.m */,
+				058F38C61F551574003BDC4E /* SDPhotoBrowserConfig.h */,
+				058F38C71F551574003BDC4E /* SDWaitingView.h */,
+				058F38C81F551574003BDC4E /* SDWaitingView.m */,
+			);
+			path = SDPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		059DBDE71F4D70D700357D0A /* TimeLineViewController */ = {
@@ -626,12 +651,15 @@
 				05A8FBDB1F2201E800AC1D61 /* main.m in Sources */,
 				05134BA21F4ECF8E0016A8E5 /* CommentTableViewCell.m in Sources */,
 				0585C5E81F4E8D6C00AACFB0 /* TimeLineTableHeaderView.m in Sources */,
+				058F38C91F551574003BDC4E /* SDBrowserImageView.m in Sources */,
 				056F4E521F4D6B7700A79C4E /* BaseViewController.m in Sources */,
 				0585C5F61F4EBF8200AACFB0 /* TimeLineTableViewCell.m in Sources */,
+				058F38CB1F551574003BDC4E /* SDWaitingView.m in Sources */,
 				059DBE051F4D820B00357D0A /* MessageModel.m in Sources */,
 				059DBDEB1F4D711C00357D0A /* TimeLineViewController.m in Sources */,
 				05134BAC1F4ED2A60016A8E5 /* CommentModel.m in Sources */,
 				056F4E411F4D640200A79C4E /* RootViewController.m in Sources */,
+				058F38CA1F551574003BDC4E /* SDPhotoBrowser.m in Sources */,
 				05720F6D1F541D3F0086088A /* JGGView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
